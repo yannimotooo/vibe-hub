@@ -34,4 +34,11 @@ export const links: HubLink[] = [
       "Hyperliquid delegation flows and validator exposure over time.",
     category: "Hyperliquid",
   },
+  {
+    title: "Strategy (MSTR) Capital Structure",
+    url: "https://strategy-hhgm.vercel.app",
+    description:
+      "MicroStrategy's capital structure and balance-sheet snapshot.",
+    category: "Equity",
+  },
 ];
