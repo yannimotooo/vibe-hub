@@ -16,7 +16,7 @@ const mono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   title: "Vibe Hub",
-  description: "Yannick's dashboards and tools.",
+  description: "Directory of internal DeFi Vibe Projects.",
   robots: { index: false, follow: false },
 };
 
