@@ -17,12 +17,7 @@ export function StatusBar() {
   return (
     <header className="border-b border-border bg-surface">
       <div className="max-w-5xl mx-auto px-6 h-14 flex items-center justify-between">
-        <div className="flex items-baseline gap-3">
-          <span className="font-semibold tracking-tight">Vibe Hub</span>
-          <span className="text-[11px] uppercase tracking-[0.14em] text-subtle hidden sm:inline">
-            Yannick&rsquo;s desk
-          </span>
-        </div>
+        <span className="font-semibold tracking-tight">Vibe Hub</span>
         <button
           onClick={onLogout}
           disabled={loggingOut}

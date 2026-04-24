@@ -38,11 +38,13 @@ export default function LoginPage() {
   return (
     <main className="min-h-screen flex items-center justify-center p-6">
       <div className="w-full max-w-[360px]">
-        <div className="text-center mb-10">
-          <div className="text-[11px] uppercase tracking-[0.16em] text-muted mb-2">
-            Vibe Hub
-          </div>
-          <h1 className="text-[22px] font-semibold tracking-tight">Sign in</h1>
+        <div className="mb-8">
+          <h1 className="text-[28px] font-semibold tracking-tight">
+            <span className="text-accent">&gt;</span> Vibe Hub
+          </h1>
+          <p className="mt-2 text-[13px] text-muted vh-cursor">
+            $ sign in
+          </p>
         </div>
 
         <form onSubmit={onSubmit} className="space-y-3">

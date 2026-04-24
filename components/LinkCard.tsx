@@ -10,18 +10,21 @@ export function LinkCard({ link }: { link: HubLink }) {
       rel="noopener noreferrer"
       className="group block bg-surface border border-border p-5 hover:border-ink transition-colors"
     >
-      <div className="flex items-center justify-between text-[11px] font-medium uppercase tracking-[0.12em] text-muted mb-3">
-        <span>{link.category}</span>
-        <span className="font-mono normal-case tracking-normal text-subtle">
+      <div className="flex items-center justify-between gap-3 text-[11px] uppercase tracking-[0.12em] text-muted mb-3">
+        <span className="whitespace-nowrap">[ {link.category} ]</span>
+        <span className="normal-case tracking-normal text-subtle truncate">
           {host}
         </span>
       </div>
 
-      <h2 className="text-[17px] font-semibold leading-snug tracking-tight text-ink group-hover:text-accent transition-colors">
+      <h2 className="text-[16px] font-semibold leading-snug tracking-tight text-ink group-hover:text-accent transition-colors">
+        <span className="text-muted group-hover:text-accent transition-colors">
+          &gt;{" "}
+        </span>
         {link.title}
       </h2>
 
-      <p className="mt-2 text-[13.5px] text-muted leading-relaxed">
+      <p className="mt-2 text-[13px] text-muted leading-relaxed">
         {link.description}
       </p>
     </a>
